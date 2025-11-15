@@ -1,0 +1,12 @@
+import openai
+
+openai.api_key = "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"
+
+try:
+    response = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=[{"role": "system", "content": "Say hello."}]
+    )
+    print(response.choices[0].message.content)
+except openai.OpenAIError as e:
+    print("OpenAI API error:", e)
