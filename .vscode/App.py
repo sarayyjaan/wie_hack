@@ -266,7 +266,7 @@ if user_input and st.button("Ask"):
 
 
 # Set your API key safely
-openai.api_key = "API_KEY"
+
 
 # -----------------------------
 # 2. Streamlit page setup
